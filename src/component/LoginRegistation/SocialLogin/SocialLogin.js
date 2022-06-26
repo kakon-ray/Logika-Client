@@ -34,7 +34,7 @@ const SocialLogin = () => {
     <div>
       <p
         onClick={signinGoogle}
-        className="px-7 py-3 text-white font-medium hover:rounded-full text-sm leading-snug uppercase shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
+        className="px-7 py-3 text-white font-medium hover:rounded-full  trans text-sm leading-snug uppercase shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full flex justify-center items-center mb-3"
         style={{ backgroundColor: "#4285f4" }}
         role="button"
         data-mdb-ripple="true"

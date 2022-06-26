@@ -65,7 +65,7 @@ const Allinventory = () => {
             <div
               className="
                 spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0
-                  text-purple-500
+                  text-lime-500
                 "
               role="status"
             >
@@ -114,7 +114,7 @@ const Allinventory = () => {
             <Link to="/manageitems">
               <button
                 type="button"
-                className="inline-block  bg-black dark:bg-purple-600 dark:hover:bg-red-600 font-bold text-center mr-2 px-10 py-3 skew-x-12  text-gray-300 font-medium text-xs leading-tight  hover:bg-red-600 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block  bg-black dark:bg-[#14a800] dark:hover:bg-[#178a08] font-bold text-center mr-2 px-10 py-3 skew-x-12  text-gray-300 font-medium text-xs leading-tight  hover:bg-[#178a08] hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
                 Manage Inventory
               </button>

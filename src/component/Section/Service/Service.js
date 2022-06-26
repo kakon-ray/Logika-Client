@@ -4,9 +4,9 @@ import Fade from "react-reveal/Fade";
 
 const Delivery = () => {
   return (
-    <div className="container mx-auto md:px-20 px-12 py-6">
+    <div className="container mx-auto md:px-8 px-12 py-6">
       <Fade left>
-        <h1 className="text-3xl text-purple-600 text-center font-bold mt-10">
+        <h1 className="text-3xl text-[#14a800] text-center font-bold mt-10">
           OUR SERVICES
         </h1>
       </Fade>
@@ -23,7 +23,7 @@ const Delivery = () => {
               <button
                 type="button"
                 style={{ bottom: "-15px", right: "-30px" }}
-                className="inline-block float-left skew-x-12 absolute bg-purple-600  font-bold text-center  mr-2 px-10 py-2 border-2 border-purple-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-red-600 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block float-left skew-x-12 absolute bg-[#14a800]  font-bold text-center  mr-2 px-10 py-2 border-2 border-lime-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-[#178a08] hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
                 Red More
               </button>
@@ -43,7 +43,7 @@ const Delivery = () => {
               <button
                 type="button"
                 style={{ bottom: "-15px", right: "-30px" }}
-                className="inline-block float-left skew-x-12 absolute bg-purple-600  font-bold text-center  mr-2 px-10 py-2 border-2 border-purple-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-red-600 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block float-left skew-x-12 absolute bg-[#14a800]  font-bold text-center  mr-2 px-10 py-2 border-2 border-lime-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-[#178a08] hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
                 Red More
               </button>
@@ -62,7 +62,7 @@ const Delivery = () => {
               <button
                 type="button"
                 style={{ bottom: "-15px", right: "-30px" }}
-                className="inline-block float-left skew-x-12 absolute bg-purple-600  font-bold text-center  mr-2 px-10 py-2 border-2 border-purple-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-red-600 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block float-left skew-x-12 absolute bg-[#14a800]  font-bold text-center  mr-2 px-10 py-2 border-2 border-lime-600 hover:border-red-600 text-gray-200 font-medium text-xs leading-tight  hover:bg-[#178a08] hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
                 Red More
               </button>

@@ -46,13 +46,12 @@ const Slider = () => {
                 />
                 <div className="carousel-caption hidden md:block absolute text-center">
                   <div className="carousel-content">
-                    <h5 className="text-5xl mb-2 w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS
+                    <h5 className="text-4xl mb-2 w-2/4 mx-auto">
+                      Check Out Our Best Project
                     </h5>
-                    <p className="text-xl w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND LOGISTC
-                      QUESTIONS CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND
-                      LOGISTC QUESTIONS
+                    <p className="text-sm w-2/4 mx-auto">
+                      Forget the old rules. You can have the best people. Right
+                      now. Right here.
                     </p>
                   </div>
                 </div>
@@ -68,13 +67,12 @@ const Slider = () => {
                 />
                 <div className="carousel-caption hidden md:block absolute text-center">
                   <div className="carousel-content">
-                    <h5 className="text-5xl mb-2 w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS
+                    <h5 className="text-4xl mb-2 w-2/4 mx-auto">
+                      Check Out Our Best Project
                     </h5>
-                    <p className="text-xl w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND LOGISTC
-                      QUESTIONS CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND
-                      LOGISTC QUESTIONS
+                    <p className="text-sm w-2/4 mx-auto">
+                      Forget the old rules. You can have the best people. Right
+                      now. Right here.
                     </p>
                   </div>
                 </div>
@@ -90,13 +88,12 @@ const Slider = () => {
                 />
                 <div className="carousel-caption hidden md:block absolute text-center">
                   <div className="carousel-content">
-                    <h5 className="text-5xl mb-2 w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS
+                    <h5 className="text-4xl mb-2 w-2/4 mx-auto">
+                      Check Out Our Best Project
                     </h5>
-                    <p className="text-xl w-2/4 mx-auto">
-                      CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND LOGISTC
-                      QUESTIONS CHECK OUT OUR BEST OFFERS FOR YOUR TRANSPORT AND
-                      LOGISTC QUESTIONS
+                    <p className="text-sm w-2/4 mx-auto">
+                      Forget the old rules. You can have the best people. Right
+                      now. Right here.
                     </p>
                   </div>
                 </div>

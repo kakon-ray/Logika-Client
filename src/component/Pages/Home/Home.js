@@ -31,11 +31,18 @@ const Home = () => {
     fetchFunction();
   }, []);
 
+  var sectionStyle = {
+    backgroundPosition: "50%",
+    backgroundImage: `url("https://mdbcdn.b-cdn.net/img/new/slides/146.webp")`,
+
+    height: "500px",
+  };
+
   return (
     <div className="dark:bg-black">
       <Slider></Slider>
 
-      <div className="container mx-auto px-4 md:px-20 py-8 pt-12">
+      <div className="container  py-8 pt-12">
         <h1 className="text-3xl text-stone-900 font-bold uppercase text-center mx-auto mb-12 dark:text-slate-200">
           Stock Products
         </h1>
@@ -44,7 +51,7 @@ const Home = () => {
             <div
               className="
                 spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0
-                  text-purple-500
+                  text-lime-500
                 "
               role="status"
             >
@@ -52,7 +59,7 @@ const Home = () => {
             </div>
           </div>
         ) : (
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-5">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 mx-auto px-4 md:px-8 xl:grid-cols-4  gap-5">
             {products?.map((item) => {
               return (
                 <React.Fragment key={item._id}>
@@ -79,66 +86,43 @@ const Home = () => {
             <Link to="/allinventory">
               <button
                 type="button"
-                className="inline-block  bg-purple-600 font-bold text-center mr-2 px-10 py-3 skew-x-12  text-gray-300 font-medium text-xs leading-tight  hover:bg-red-600 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                className="inline-block bg-[#14a800] ml-6 rounded-full font-bold text-center  py-3 px-8 border-2 border-white-500 text-white font-medium text-xs leading-tight hover:bg-[#178a08] hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
               >
-                See all Inventory
+                See All Products
               </button>
             </Link>
           </div>
         </LightSpeed>
       </div>
-      <Delivery></Delivery>
-      <div
-        className="grid md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3  gap-4 h-100 my-36"
-        style={{
-          backgroundImage:
-            "url(" + "https://i.ibb.co/Rjn9grS/bg-image-1.jpg" + ")",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div></div>
-
-        <div className="col-span-2 py-12 bg-lime-600 text-gray-300 bg-opacity-80 px-12 skew-y-12">
-          <Fade right>
-            <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-8 my-5">
-              <div>
-                <h1 className="text-xl">Fast Delivery</h1>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil
-                  imperdiet doming id quod mazim placerat facer possim assum.
-                </p>
-              </div>
-              <div>
-                <h1 className="text-xl">Secure Packaging</h1>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil
-                  imperdiet doming id quod mazim placerat facer possim assum.
-                </p>
+      <section class=" my-12">
+        <div
+          class="relative overflow-hidden bg-no-repeat bg-cover"
+          style={sectionStyle}
+        >
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.75)" }}
+          >
+            <div class="flex justify-center items-center h-full">
+              <div class="text-center text-white px-6 md:px-12">
+                <h1 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight mb-12">
+                  The best offer on the market <br />
+                  <span>for your business</span>
+                </h1>
+                <button
+                  type="button"
+                  class="inline-block px-7 py-3 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                  data-mdb-ripple="true"
+                  data-mdb-ripple-color="light"
+                >
+                  Get started
+                </button>
               </div>
             </div>
-          </Fade>
-          <Fade left>
-            <div className="grid xl:grid-cols-2 md:grid-cols-2 gap-8 my-8">
-              <div>
-                <h1 className="text-xl">Fast Delivery</h1>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil
-                  imperdiet doming id quod mazim placerat facer possim assum.
-                </p>
-              </div>
-              <div>
-                <h1 className="text-xl">Secure Packaging</h1>
-                <p>
-                  Nam liber tempor cum soluta nobis eleifend option congue nihil
-                  imperdiet doming id quod mazim placerat facer possim assum.
-                </p>
-              </div>
-            </div>
-          </Fade>
+          </div>
         </div>
-      </div>
+      </section>
+      <Delivery></Delivery>
 
       <MetOurTem></MetOurTem>
       <StartProject />

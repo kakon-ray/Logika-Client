@@ -116,7 +116,7 @@ const Login = () => {
 
                 <button
                   type="submit"
-                  className="inline-block px-7 py-3 bg-purple-700 text-white font-medium text-sm leading-snug uppercase shadow-md hover:bg-purple-800 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out w-full"
+                  className="inline-block px-7 py-3 bg-[#14a800] text-white font-medium text-sm leading-snug uppercase shadow-md hover:bg-lime-800 hover:shadow-lg focus:bg-lime-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-lime-800 active:shadow-lg transition duration-150 ease-in-out w-full"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
@@ -124,7 +124,7 @@ const Login = () => {
                 </button>
 
                 <Link to="/registation">
-                  <p className="text-purple-500 text-center pt-4 cursor-pointer">
+                  <p className="text-lime-500 text-center pt-4 cursor-pointer">
                     Do not have a account! please register
                   </p>
                 </Link>

@@ -16,19 +16,16 @@ const Navbar = ({ sendDataToParent }) => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "Service", link: "/services" },
-    { name: "Blog", link: "/blog" },
-    { name: "All Inventory", link: "/allinventory" },
+    { name: "All Product", link: "/allinventory" },
   ];
 
   let userLinks = [
     { name: "Home", link: "/" },
     { name: "Service", link: "/services" },
-    { name: "Blog", link: "/blog" },
-    { name: "All Inventory", link: "/allinventory" },
-
-    { name: "My Item", link: "/myitem" },
-    { name: "Add Item", link: "/add" },
-    { name: "Manage Inventory", link: "/manageitems" },
+    { name: "All Product", link: "/allinventory" },
+    { name: "My Order", link: "/myitem" },
+    { name: "Add Product", link: "/add" },
+    { name: "Manage Product", link: "/manageitems" },
   ];
 
   const logOut = () => {
@@ -48,11 +45,11 @@ const Navbar = ({ sendDataToParent }) => {
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800"
         >
-          <span className="xl:text-3xl md:text-xl text-indigo-600">
-            <Link to="/" className="text-purple-600 flex items-center">
+          <span className="xl:text-3xl md:text-sm text-indigo-600">
+            <Link to="/" className="text-[#14a800] flex items-center">
               <ion-icon
                 name="logo-ionic"
-                className="text-purple-600"
+                className="text-[ #14a800]"
               ></ion-icon>
               LOGIKA
             </Link>
@@ -77,11 +74,11 @@ const Navbar = ({ sendDataToParent }) => {
                 {userLinks.map((link) => (
                   <li
                     key={link.name}
-                    className="md:mr-5 xl:mr-12 lg:mr-8 text-lg md:my-3 my-7"
+                    className="md:mr-5 xl:mr-12 lg:mr-8 text-sm uppercase md:my-3 my-7"
                   >
                     <CustomLink
                       to={link.link}
-                      className="text-gray-500 hover:text-purple-700 duration-500 font-bold"
+                      className="text-gray-500 hover:text-lime-700 duration-500 font-bold"
                     >
                       {link.name}
                     </CustomLink>
@@ -93,11 +90,11 @@ const Navbar = ({ sendDataToParent }) => {
                 {Links.map((link) => (
                   <li
                     key={link.name}
-                    className="md:mr-5 xl:mr-12 lg:mr-8 text-lg md:my-3 my-7"
+                    className="md:mr-5 xl:mr-12 lg:mr-8 text-sm uppercase md:my-3 my-7"
                   >
                     <CustomLink
                       to={link.link}
-                      className="text-gray-500 hover:text-purple-700 duration-500 font-bold"
+                      className="text-gray-500 hover:text-lime-700 duration-500 font-bold"
                     >
                       {link.name}
                     </CustomLink>
@@ -112,7 +109,7 @@ const Navbar = ({ sendDataToParent }) => {
               }`}
             >
               <input
-                className="form-check-input appearance-none w-9 rounded-full  h-5 align-top  bg-no-repeat checked:bg-purple-600 bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
+                className="form-check-input appearance-none w-9 rounded-full  h-5 align-top  bg-no-repeat checked:bg-[#14a800] bg-gray-300 focus:outline-none cursor-pointer shadow-sm"
                 type="checkbox"
                 onChange={(e) => sendDataToParent(e.target.checked)}
                 role="switch"
@@ -123,10 +120,17 @@ const Navbar = ({ sendDataToParent }) => {
             {!user ? (
               <span className="lg:ml-8 md:ml-2">
                 <Link to="/login">
-                  <Button>Sign in</Button>
+                  <button type="button" className="bg-none text-lime-800 mr-6">
+                    Log In
+                  </button>
                 </Link>
                 <Link to="/registation">
-                  <Button>Sign up</Button>
+                  <button
+                    type="button"
+                    className="inline-block bg-[#14a800] rounded-full font-bold text-center  py-3 px-8 border-2 border-white-500 text-white font-medium text-xs leading-tight hover:bg-[#178a08] hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                  >
+                    Sign up
+                  </button>
                 </Link>
               </span>
             ) : (
@@ -154,7 +158,7 @@ const Navbar = ({ sendDataToParent }) => {
                   >
                     <img
                       src={user?.photoURL ? user?.photoURL : img}
-                      className="rounded-full xl:w-10 xl:h-10 md:w-8 md:h-8 w-8 h-8 border-solid border-2 border-purple-500"
+                      className="rounded-full xl:w-10 xl:h-10 md:w-8 md:h-8 w-8 h-8 border-solid border-2 border-lime-500"
                       alt=""
                     />
                     <svg
@@ -198,16 +202,17 @@ const Navbar = ({ sendDataToParent }) => {
                     aria-labelledby="dropdownMenuButton4"
                   >
                     <span className="flex flex-col justify-center ">
-                      <li className="text-x font-bold text-center text-purple-600 px-5">
+                      <li className="text-x font-bold text-center text-[#14a800] px-5">
                         {user?.displayName}
                       </li>
-                      <li className="text-x font-bold text-center py-3 text-purple-600 px-5">
+                      <li className="text-x font-bold text-center py-3 text-[#14a800] px-5">
                         {user?.email}
                       </li>
                       <li>
                         <button
-                          className="inline-block ml-10 font-bold text-center  px-6 py-2 border-2 border-purple-500 text-purple-500 font-medium text-xs leading-tight w-100 hover:bg-purple-600 hover:text-neutral-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                          type="button"
                           onClick={logOut}
+                          className="inline-block bg-[#14a800] ml-6 rounded-full font-bold text-center  py-3 px-8 border-2 border-white-500 text-white font-medium text-xs leading-tight bg-[#178a08] hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                         >
                           Sign Out
                         </button>
